@@ -7,13 +7,11 @@ function getInputFieldValueById(inputFieldId) {
 }
 
 function getTextElementValueById(elementId) {
-  const textElement = document.getElementById(elementId);
-  const textElementValueString = textElement.innerText;
-  const textElementValue = textElementValueString;
-  textElementValue;
+  const textElement = document.getElementById(elementId).innerText;
+  return parseInt(textElement);
 }
 
 function setTextElementValueById(elementId, newValue) {
   const textElement = document.getElementById(elementId);
-  textElement.value = newValue;
+  textElement.innerText = newValue;
 }
